@@ -15,12 +15,12 @@ app.get("/products", async (req, res) => {
   }
 });
 
-// Verificación 2: Para obtener los primeros "limit" productos, llame a http://localhost:8080/products?limit=5.
-app.get("/products", async (req, res) => {
+// Verificación 2: Para obtener los primeros "limit" productos, llame a http://localhost:8080/products/limited?limit=5.
+app.get("/products/limited", async (req, res) => {
   try {
-    const limit = req.query.limit ? parseInt(req.query.limit) : undefined;
+    const limit = req.query.limit ? parseInt(req.query.limit) : 5;
     const products = await productManager.getProducts(limit);
-    res.json(products);
+    res.json(products.slice(0, limit));
   } catch (error) {
     res.status(500).send(error.message);
   }

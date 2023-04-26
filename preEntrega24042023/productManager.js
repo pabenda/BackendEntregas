@@ -13,13 +13,16 @@ class ProductManager {
     await fs.writeFile(this.path, JSON.stringify(products));
   }
 
-  async getProducts() {
+  async getProducts(limit) {
     let products = [];
     try {
       const file = await fs.readFile(this.path);
       products = JSON.parse(file);
     } catch (error) {
       console.log(error);
+    }
+    if (limit !== undefined) {
+      return products.slice(0, limit);
     }
     return products;
   }
