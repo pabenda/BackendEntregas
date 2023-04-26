@@ -32,7 +32,7 @@ app.get("/products/:pid", async (req, res) => {
     const productId = parseInt(req.params.pid);
     const product = await productManager.getProductById(productId);
     if (!product) {
-      res.status(404).send(`Product with id ${productId} not found`);
+      res.status(404).send(`Producto con ID ${productId} no se encuentra`);
     } else {
       res.json(product);
     }
@@ -47,7 +47,7 @@ app.get("/products/:pid", async (req, res) => {
     const productId = parseInt(req.params.pid);
     const product = await productManager.getProductById(productId);
     if (!product) {
-      res.status(404).json({ error: `Product with id ${productId} not found` });
+      res.status(404).json({ error: `Producto con ID ${productId} no se encuentra` });
     } else {
       res.json(product);
     }
@@ -58,5 +58,5 @@ app.get("/products/:pid", async (req, res) => {
 
 const PORT = 8080;
 app.listen(PORT, () => {
-  console.log(`Server running on port ${PORT}`);
+  console.log(`Servidor corriendo en puerto ${PORT}`);
 });

@@ -45,7 +45,7 @@ class ProductManager {
     if (products.length !== filteredProducts.length) {
       await fs.writeFile(this.path, JSON.stringify(filteredProducts));
     } else {
-      throw new Error(`Product with id ${id} does not exist`);
+      throw new Error(`Producto con ID ${id} no existe`);
     }
   }
 }
