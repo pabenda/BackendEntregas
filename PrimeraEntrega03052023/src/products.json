@@ -1,0 +1,72 @@
+[
+    {
+        "id": 1,
+        "name": "Camiseta",
+        "price": 29.99,
+        "description": "Una camiseta de algodón suave con cuello redondo",
+        "image": "https://example.com/images/shirt.jpg"
+    },
+    {
+        "id": 2,
+        "name": "Pantalones",
+        "price": 49.99,
+        "description": "Unos pantalones de mezclilla con corte recto",
+        "image": "https://example.com/images/pants.jpg"
+    },
+    {
+        "id": 3,
+        "name": "Zapatos deportivos",
+        "price": 99.99,
+        "description": "Zapatos deportivos para correr con suela de goma",
+        "image": "https://example.com/images/sneakers.jpg"
+    },
+    {
+        "id": 4,
+        "name": "Gorra",
+        "price": 19.99,
+        "description": "Una gorra de béisbol con el logotipo de un equipo deportivo",
+        "image": "https://example.com/images/cap.jpg"
+    },
+    {
+        "id": 5,
+        "name": "Vestido",
+        "price": 79.99,
+        "description": "Un vestido de noche elegante con corte asimétrico",
+        "image": "https://example.com/images/dress.jpg"
+    },
+    {
+        "id": 6,
+        "name": "Bolso",
+        "price": 39.99,
+        "description": "Un bolso de hombro con correa ajustable",
+        "image": "https://example.com/images/bag.jpg"
+    },
+    {
+        "id": 7,
+        "name": "Pulsera",
+        "price": 9.99,
+        "description": "Una pulsera de plata con dijes",
+        "image": "https://example.com/images/bracelet.jpg"
+    },
+    {
+        "id": 8,
+        "name": "Reloj",
+        "price": 129.99,
+        "description": "Un reloj de pulsera elegante con correa de cuero",
+        "image": "https://example.com/images/watch.jpg"
+    },
+    {
+        "id": 9,
+        "name": "Gafas de sol",
+        "price": 59.99,
+        "description": "Unas gafas de sol con lentes polarizadas y armazón de metal",
+        "image": "https://example.com/images/sunglasses.jpg"
+    },
+    {
+        "id": 10,
+        "name": "Chaqueta",
+        "price": 119.99,
+        "description": "Una chaqueta de cuero con cuello de solapa y cierre de cremallera",
+        "image": "https://example.com/images/jacket.jpg"
+    }
+]
