@@ -66,8 +66,14 @@ cartRouter.get("/:cid", (req, res) => {
   res.send(`Obteniendo carrito con ID ${cartId}`);
 });
 
-cartRouter.post("/", (req, res) => {
-  res.send("Creando nuevo carrito");
+cartRouter.post("/", async (req, res) => {
+  try {
+    const cart = req.body;
+    // Aquí se debe agregar la lógica para verificar si ya existe un carrito con el mismo código
+    res.send("Creando nuevo carrito");
+  } catch (error) {
+    res.status(500).send(error.message);
+  }
 });
 
 cartRouter.put("/:cid", (req, res) => {
