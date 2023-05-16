@@ -7,6 +7,9 @@ class ProductManager {
   }
 
   async addProduct(product) {
+    if (!product.name || !product.price || !product.description) {
+      throw new Error("No se enviaron todas las propiedades necesarias para crear el producto");
+    }
     product.id = ++this._idCounter;
     let products = await this.getProducts();
     products.push(product);
@@ -39,6 +42,8 @@ class ProductManager {
       newProduct.id = id;
       products[productIndex] = newProduct;
       await fs.writeFile(this.path, JSON.stringify(products));
+    } else {
+      throw new Error(`No se puede actualizar el producto. El producto con ID ${id} no existe`);
     }
   }
 
@@ -48,7 +53,7 @@ class ProductManager {
     if (products.length !== filteredProducts.length) {
       await fs.writeFile(this.path, JSON.stringify(filteredProducts));
     } else {
-      throw new Error(`Producto con ID ${id} no existe`);
+      throw new Error(`El producto con ID ${id} no existe`);
     }
   }
 }
