@@ -1,0 +1,72 @@
+[
+    {
+        "id": 1,
+        "name": "Camiseta",
+        "price": 29.99,
+        "description": "Una camiseta de algodón suave con cuello redondo",
+        "image": "https://example.com/images/shirt.jpg"
+    },
+    {
+        "id": 2,
+        "name": "Pantalones",
+        "price": 49.99,
+        "description": "pantalones corte recto",
+        "image": "https://example.com/images/pants.jpg"
+    },
+    {
+        "id": 3,
+        "name": "Zapatillas",
+        "price": 99.99,
+        "description": "Zapatillas para correr con suela de goma",
+        "image": "https://example.com/images/sneakers.jpg"
+    },
+    {
+        "id": 4,
+        "name": "Gorra",
+        "price": 19.99,
+        "description": "Una gorra de un equipo deportivo",
+        "image": "https://example.com/images/cap.jpg"
+    },
+    {
+        "id": 5,
+        "name": "Vestido",
+        "price": 79.99,
+        "description": "Un vestido de noche",
+        "image": "https://example.com/images/dress.jpg"
+    },
+    {
+        "id": 6,
+        "name": "Bolso",
+        "price": 39.99,
+        "description": "Un bolso con correa ajustable",
+        "image": "https://example.com/images/bag.jpg"
+    },
+    {
+        "id": 7,
+        "name": "Pulsera",
+        "price": 9.99,
+        "description": "Una pulsera de plata",
+        "image": "https://example.com/images/bracelet.jpg"
+    },
+    {
+        "id": 8,
+        "name": "Reloj",
+        "price": 129.99,
+        "description": "Un reloj de pulsera",
+        "image": "https://example.com/images/watch.jpg"
+    },
+    {
+        "id": 9,
+        "name": "Anteojos de sol",
+        "price": 59.99,
+        "description": "Anteojos de sol con armazón de metal",
+        "image": "https://example.com/images/sunglasses.jpg"
+    },
+    {
+        "id": 10,
+        "name": "Campera",
+        "price": 119.99,
+        "description": "Una campera de cuero",
+        "image": "https://example.com/images/jacket.jpg"
+    }
+]
